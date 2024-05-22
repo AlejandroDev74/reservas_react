@@ -13,9 +13,9 @@ export function TaskCard({ task }) {
           <Button onClick={() => deleteTask(task._id)}>Eliminar</Button>
         </div>
       </header>
-      <p className="text-slate-300">Descripcion: {task.description}</p>
+      <br /><p className="text-slate-300">Descripcion: {task.description}</p>
       {/* format date */}
-      <p>
+      <p>Fecha viaje: &nbsp;
         {task.date &&
           new Date(task.date).toLocaleDateString("es-ES", {
             weekday: "long",
